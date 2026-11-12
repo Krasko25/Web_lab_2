@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="Барахолка — техника, одежда и вещи с историей по честным ценам." name="description"/>
+    <title>
+      Барахолка — вещи находят хозяев
+    </title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-top d-flex align-items-center">
+        <a aria-label="Барахолка — главная" class="brand" href="index.html">
+          <span class="brand-mark">
+            б
+          </span>
+          <span>
+            БАРАХОЛКА
+            <span class="brand-dot">
+              .
+            </span>
+            <small>
+              вещи находят хозяев
+            </small>
+          </span>
+        </a>
+        <form action="catalog.html" class="header-search" method="get">
+          <label class="sr-only visually-hidden" for="search-query">
+            Поиск по объявлениям
+          </label>
+          <select aria-label="Раздел поиска" class="form-select" name="section">
+            <option value="all">
+              Везде
+            </option>
+            <option value="electronics">
+              Электроника
+            </option>
+            <option value="clothes">
+              Одежда
+            </option>
+            <option value="accessories">
+              Аксессуары
+            </option>
+          </select>
+          <input class="form-control" id="search-query" name="q" placeholder="Что будем искать?" type="search"/>
+          <button aria-label="Найти" type="submit">
+            ⌕
+          </button>
+        </form>
+        <div class="header-actions d-flex align-items-center">
+          <a aria-label="Корзина" class="cart-link" href="cart.html">
+            🛒
+            <span class="cart-count">
+              3
+            </span>
+          </a>
+          <a class="account-button" href="checkout.html">
+            Оформить заказ
+            <span>
+              →
+            </span>
+          </a>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <div class="container nav-inner">
+          <a href="index.html">
+            Главная
+          </a>
+          <a href="catalog.html?section=electronics">
+            Электроника
+          </a>
+          <a href="catalog.html?section=clothes">
+            Одежда
+          </a>
+          <a href="catalog.html?section=accessories">
+            Аксессуары
+          </a>
+          <a href="catalog.html?section=music">
+            Музыка
+          </a>
+          <a href="catalog.html?section=photo">
+            Фото и видео
+          </a>
+          <a class="sell-link" href="catalog.html">
+            Все объявления
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-inner container">
+          <div class="hero-copy">
+            <span class="eyebrow">
+              Вещам — вторую жизнь
+            </span>
+            <h1>
+              НАХОДИ СВОЁ.
+              <br/>
+              ОТДАВАЙ
+              <span>
+                ЛИШНЕЕ.
+              </span>
+            </h1>
+            <p>
+              Техника, одежда и интересные вещи по честным ценам. Здесь у каждой находки может появиться новый хозяин.
+            </p>
+            <a class="btn button button-primary" href="catalog.html">
+              Смотреть находки
+              <span aria-hidden="true">
+                →
+              </span>
+            </a>
+          </div>
+        </div>
+        <div class="hero-note">
+          <span class="dot">
+          </span>
+          Новые объявления каждый день
+        </div>
+      </section>
+      <section class="section container category-section">
+        <div class="section-heading d-flex align-items-end justify-content-between">
+          <div>
+            <span class="eyebrow">
+              Выбирай по интересам
+            </span>
+            <h2>
+              Популярные разделы
+            </h2>
+          </div>
+          <a class="text-link" href="catalog.html">
+            Все категории
+            <span>
+              →
+            </span>
+          </a>
+        </div>
+        <div class="category-grid">
+          <a class="category-card category-card-tall" href="catalog.html?section=electronics">
+            <img alt="Фотоаппарат Nikon" class="img-fluid" src="img/nikon-camera.jpg"/>
+            <span class="category-label">
+              <small>
+                Гаджеты и техника
+              </small>
+              <strong>
+                Электроника
+              </strong>
+            </span>
+          </a>
+          <a class="category-card" href="catalog.html?section=clothes">
+            <img alt="Голубое платье" class="img-fluid" src="img/blue-dress.jpg"/>
+            <span class="category-label">
+              <small>
+                Найди свой образ
+              </small>
+              <strong>
+                Одежда
+              </strong>
+            </span>
+          </a>
+          <a class="category-card" href="catalog.html?section=accessories">
+            <img alt="Сумка с принтом" class="img-fluid" src="img/leopard-bag.jpg"/>
+            <span class="category-label">
+              <small>
+                Детали решают
+              </small>
+              <strong>
+                Аксессуары
+              </strong>
+            </span>
+          </a>
+          <a class="category-card category-card-wide" href="catalog.html?section=music">
+            <img alt="Акустическая гитара" class="img-fluid" src="img/acoustic-guitar.jpg"/>
+            <span class="category-label">
+              <small>
+                Для творчества
+              </small>
+              <strong>
+                Музыка и хобби
+              </strong>
+            </span>
+          </a>
+        </div>
+      </section>
+      <section class="section section-muted">
+        <div class="container">
+          <div class="section-heading d-flex align-items-end justify-content-between">
+            <div>
+              <span class="eyebrow">
+                Уже ищут нового хозяина
+              </span>
+              <h2>
+                Свежие находки
+              </h2>
+              <p class="section-subtitle">
+                Подборка вещей от участников сообщества
+              </p>
+            </div>
+            <a class="text-link" href="catalog.html">
+              Весь каталог
+              <span>
+                →
+              </span>
+            </a>
+          </div>
+          <div class="product-grid">
+            <article class="product-card">
+              <a class="product-image" href="item.html">
+                <img alt="Фотоаппарат Nikon Z8" class="img-fluid" src="img/nikon-camera.jpg"/>
+                <span class="product-tag">
+                  Для творчества
+                </span>
+              </a>
+              <div class="product-meta">
+                <span>
+                  Фото и видео
+                </span>
+                <span>
+                  Отличное
+                </span>
+              </div>
+              <a class="product-title" href="item.html">
+                Фотоаппарат Nikon Z8
+              </a>
+              <div class="product-card-bottom d-flex align-items-center justify-content-between">
+                <strong>
+                  185 000 ₽
+                </strong>
+                <a aria-label="Открыть корзину" class="add-button" href="cart.html">
+                  ＋
+                </a>
+              </div>
+              <span class="product-seller">
+                Продавец: Дмитрий
+              </span>
+            </article>
+            <article class="product-card">
+              <a class="product-image" href="item.html">
+                <img alt="Голубое платье" class="img-fluid" src="img/blue-dress.jpg"/>
+                <span class="product-tag">
+                  Летний образ
+                </span>
+              </a>
+              <div class="product-meta">
+                <span>
+                  Одежда
+                </span>
+                <span>
+                  Отличное
+                </span>
+              </div>
+              <a class="product-title" href="item.html">
+                Голубое платье
+              </a>
+              <div class="product-card-bottom d-flex align-items-center justify-content-between">
+                <strong>
+                  2 800 ₽
+                </strong>
+                <a aria-label="Открыть корзину" class="add-button" href="cart.html">
+                  ＋
+                </a>
+              </div>
+              <span class="product-seller">
+                Продавец: Екатерина
+              </span>
+            </article>
+            <article class="product-card">
+              <a class="product-image" href="item.html">
+                <img alt="Телефон Samsung с кнопками" class="img-fluid" src="img/phone-samsung.jpg"/>
+                <span class="product-tag">
+                  Находка
+                </span>
+              </a>
+              <div class="product-meta">
+                <span>
+                  Электроника
+                </span>
+                <span>
+                  Хорошее
+                </span>
+              </div>
+              <a class="product-title" href="item.html">
+                Телефон Samsung с кнопками
+              </a>
+              <div class="product-card-bottom d-flex align-items-center justify-content-between">
+                <strong>
+                  800 ₽
+                </strong>
+                <a aria-label="Открыть корзину" class="add-button" href="cart.html">
+                  ＋
+                </a>
+              </div>
+              <span class="product-seller">
+                Продавец: Алексей
+              </span>
+            </article>
+            <article class="product-card">
+              <a class="product-image" href="item.html">
+                <img alt="Электрогитара синего цвета" class="img-fluid" src="img/electric-guitar.jpg"/>
+                <span class="product-tag">
+                  Для репетиций
+                </span>
+              </a>
+              <div class="product-meta">
+                <span>
+                  Музыка
+                </span>
+                <span>
+                  Хорошее
+                </span>
+              </div>
+              <a class="product-title" href="item.html">
+                Электрогитара синего цвета
+              </a>
+              <div class="product-card-bottom d-flex align-items-center justify-content-between">
+                <strong>
+                  12 000 ₽
+                </strong>
+                <a aria-label="Открыть корзину" class="add-button" href="cart.html">
+                  ＋
+                </a>
+              </div>
+              <span class="product-seller">
+                Продавец: Артём
+              </span>
+            </article>
+            <article class="product-card">
+              <a class="product-image" href="item.html">
+                <img alt="Сумка через плечо с леопардовым принтом" class="img-fluid" src="img/leopard-bag.jpg"/>
+                <span class="product-tag">
+                  Винтаж
+                </span>
+              </a>
+              <div class="product-meta">
+                <span>
+                  Аксессуары
+                </span>
+                <span>
+                  Хорошее
+                </span>
+              </div>
+              <a class="product-title" href="item.html">
+                Сумка через плечо с леопардовым принтом
+              </a>
+              <div class="product-card-bottom d-flex align-items-center justify-content-between">
+                <strong>
+                  900 ₽
+                </strong>
+                <a aria-label="Открыть корзину" class="add-button" href="cart.html">
+                  ＋
+                </a>
+              </div>
+              <span class="product-seller">
+                Продавец: Мария
+              </span>
+            </article>
+            <article class="product-card">
+              <a class="product-image" href="item.html">
+                <img alt="Наушники JBL" class="img-fluid" src="img/jbl-headphones.jpg"/>
+                <span class="product-tag">
+                  Проверены
+                </span>
+              </a>
+              <div class="product-meta">
+                <span>
+                  Электроника
+                </span>
+                <span>
+                  Хорошее
+                </span>
+              </div>
+              <a class="product-title" href="item.html">
+                Наушники JBL
+              </a>
+              <div class="product-card-bottom d-flex align-items-center justify-content-between">
+                <strong>
+                  1 500 ₽
+                </strong>
+                <a aria-label="Открыть корзину" class="add-button" href="cart.html">
+                  ＋
+                </a>
+              </div>
+              <span class="product-seller">
+                Продавец: Илья
+              </span>
+            </article>
+            <article class="product-card">
+              <a class="product-image" href="item.html">
+                <img alt="Белые туфли на каблуке" class="img-fluid" src="img/white-heels.jpg"/>
+                <span class="product-tag">
+                  Элегантность
+                </span>
+              </a>
+              <div class="product-meta">
+                <span>
+                  Обувь
+                </span>
+                <span>
+                  Отличное
+                </span>
+              </div>
+              <a class="product-title" href="item.html">
+                Белые туфли на каблуке
+              </a>
+              <div class="product-card-bottom d-flex align-items-center justify-content-between">
+                <strong>
+                  1 900 ₽
+                </strong>
+                <a aria-label="Открыть корзину" class="add-button" href="cart.html">
+                  ＋
+                </a>
+              </div>
+              <span class="product-seller">
+                Продавец: Ольга
+              </span>
+            </article>
+            <article class="product-card">
+              <a class="product-image" href="item.html">
+                <img alt="Акустическая гитара с чехлом" class="img-fluid" src="img/acoustic-guitar.jpg"/>
+                <span class="product-tag">
+                  Комплект
+                </span>
+              </a>
+              <div class="product-meta">
+                <span>
+                  Музыка
+                </span>
+                <span>
+                  Отличное
+                </span>
+              </div>
+              <a class="product-title" href="item.html">
+                Акустическая гитара с чехлом
+              </a>
+              <div class="product-card-bottom d-flex align-items-center justify-content-between">
+                <strong>
+                  6 500 ₽
+                </strong>
+                <a aria-label="Открыть корзину" class="add-button" href="cart.html">
+                  ＋
+                </a>
+              </div>
+              <span class="product-seller">
+                Продавец: Михаил
+              </span>
+            </article>
+          </div>
+          <div class="center-action">
+            <a class="btn button button-outline" href="catalog.html">
+              Смотреть все объявления
+            </a>
+          </div>
+        </div>
+      </section>
+      <section class="promo-section container">
+        <div class="promo-photo">
+          <div class="promo-copy">
+            <span class="eyebrow">
+              Осознанный выбор
+            </span>
+            <h2>
+              30% МЕНЬШЕ
+              <br/>
+              <span>
+                ПОТРЕБЛЕНИЯ.
+              </span>
+            </h2>
+            <p>
+              И больше вещей, которые продолжают радовать.
+            </p>
+            <a class="btn button button-light" href="catalog.html">
+              Найти свою вещь
+            </a>
+          </div>
+        </div>
+        <div class="benefits-panel">
+          <article>
+            <span class="benefit-icon">
+              ↗
+            </span>
+            <div>
+              <h3>
+                Легко договориться
+              </h3>
+              <p>
+                Связывайся с продавцом и выбирай удобный способ передачи.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span class="benefit-icon">
+              %
+            </span>
+            <div>
+              <h3>
+                Честные цены
+              </h3>
+              <p>
+                Вещи получают вторую жизнь, а ты — приятную экономию.
+              </p>
+            </div>
+          </article>
+          <article>
+            <span class="benefit-icon">
+              ♡
+            </span>
+            <div>
+              <h3>
+                Осознанный выбор
+              </h3>
+              <p>
+                Покупай меньше нового и поддерживай повторное использование.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <div class="newsletter-quote">
+          <span class="quote-mark">
+            “
+          </span>
+          <div>
+            <p>
+              Хорошие вещи не должны заканчиваться на одном владельце.
+            </p>
+            <span>
+              Сообщество Барахолки
+            </span>
+          </div>
+        </div>
+        <form action="#" class="newsletter-form" method="get">
+          <label for="newsletter-email">
+            ОСТАВАЙСЯ НА СВЯЗИ
+          </label>
+          <p>
+            Новые находки и идеи для разумных покупок
+          </p>
+          <div>
+            <input class="form-control" id="newsletter-email" name="email" placeholder="Твой email" required="" type="email"/>
+            <button type="submit">
+              Подписаться
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-about">
+          <a class="brand" href="index.html">
+            <span class="brand-mark">
+              б
+            </span>
+            <span>
+              БАРАХОЛКА
+              <span class="brand-dot">
+                .
+              </span>
+              <small>
+                вещи находят хозяев
+              </small>
+            </span>
+          </a>
+          <p>
+            Место, где хорошие вещи получают второй шанс. Покупай, продавай и находи то, что давно искал.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>
+            Сообщество
+          </h3>
+          <a href="index.html">
+            Главная
+          </a>
+          <a href="catalog.html">
+            Каталог
+          </a>
+          <a href="item.html">
+            Объявление
+          </a>
+          <a href="cart.html">
+            Корзина
+          </a>
+        </div>
+        <div class="footer-column">
+          <h3>
+            Покупателям
+          </h3>
+          <a href="checkout.html">
+            Как купить
+          </a>
+          <a href="checkout.html">
+            Оформление заказа
+          </a>
+          <a href="catalog.html">
+            Все объявления
+          </a>
+        </div>
+        <div class="footer-column">
+          <h3>
+            Категории
+          </h3>
+          <a href="catalog.html?section=electronics">
+            Электроника
+          </a>
+          <a href="catalog.html?section=clothes">
+            Одежда и обувь
+          </a>
+          <a href="catalog.html?section=music">
+            Музыка
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex align-items-center justify-content-between">
+        <div class="container">
+          <span>
+            © 2026 Барахолка. Учебный проект.
+          </span>
+          <div class="social-links">
+            <a aria-label="Электронная почта" href="mailto:hello@example.com">
+              ✉
+            </a>
+            <a aria-label="Каталог" href="catalog.html">
+              Б
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

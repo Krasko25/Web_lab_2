@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="Корзина покупок на Барахолке." name="description"/>
+    <title>
+      Корзина — Барахолка
+    </title>
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.9/dist/css/bootstrap.min.css" integrity="sha384-yEPZ7jP9S0QKiUQ0m3jjsO4ProIW7wvR9gXkI7JOGa2XVsw53Yke2bsdkBbjmmiX" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-top d-flex align-items-center">
+        <a aria-label="Барахолка — главная" class="brand" href="index.html">
+          <span class="brand-mark">
+            б
+          </span>
+          <span>
+            БАРАХОЛКА
+            <span class="brand-dot">
+              .
+            </span>
+            <small>
+              вещи находят хозяев
+            </small>
+          </span>
+        </a>
+        <form action="catalog.html" class="header-search" method="get">
+          <label class="sr-only visually-hidden" for="search-query">
+            Поиск по объявлениям
+          </label>
+          <select aria-label="Раздел поиска" class="form-select" name="section">
+            <option value="all">
+              Везде
+            </option>
+            <option value="electronics">
+              Электроника
+            </option>
+            <option value="clothes">
+              Одежда
+            </option>
+            <option value="accessories">
+              Аксессуары
+            </option>
+          </select>
+          <input class="form-control" id="search-query" name="q" placeholder="Что будем искать?" type="search"/>
+          <button aria-label="Найти" type="submit">
+            ⌕
+          </button>
+        </form>
+        <div class="header-actions d-flex align-items-center">
+          <a aria-label="Корзина" class="cart-link" href="cart.html">
+            🛒
+            <span class="cart-count">
+              3
+            </span>
+          </a>
+          <a class="account-button" href="checkout.html">
+            Оформить заказ
+            <span>
+              →
+            </span>
+          </a>
+        </div>
+      </div>
+      <nav class="main-nav">
+        <div class="container nav-inner">
+          <a href="index.html">
+            Главная
+          </a>
+          <a href="catalog.html?section=electronics">
+            Электроника
+          </a>
+          <a href="catalog.html?section=clothes">
+            Одежда
+          </a>
+          <a href="catalog.html?section=accessories">
+            Аксессуары
+          </a>
+          <a href="catalog.html?section=music">
+            Музыка
+          </a>
+          <a href="catalog.html?section=photo">
+            Фото и видео
+          </a>
+          <a class="sell-link" href="catalog.html">
+            Все объявления
+          </a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-banner">
+        <div class="container page-banner-inner">
+          <div>
+            <span class="eyebrow">
+              Почти твоё
+            </span>
+            <h1>
+              Корзина
+            </h1>
+          </div>
+          <p>
+            <a href="index.html">
+              Главная
+            </a>
+            /
+            <span>
+              Корзина
+            </span>
+          </p>
+        </div>
+      </section>
+      <section class="container section cart-section">
+        <div class="cart-heading">
+          <div>
+            <span class="eyebrow">
+              Проверь свой выбор
+            </span>
+            <h2>
+              Твои объявления
+            </h2>
+          </div>
+          <a class="text-link" href="catalog.html">
+            ← Продолжить покупки
+          </a>
+        </div>
+        <div class="cart-table-head">
+          <span>
+            Объявление
+          </span>
+          <span>
+            Цена
+          </span>
+          <span>
+            Количество
+          </span>
+          <span>
+            Передача
+          </span>
+          <span>
+            Сумма
+          </span>
+        </div>
+        <div class="cart-rows">
+          <article class="cart-row">
+            <a class="cart-product-image" href="item.html">
+              <img alt="Наушники JBL" class="img-fluid" src="img/jbl-headphones.jpg"/>
+            </a>
+            <div class="cart-product-info">
+              <a href="item.html">
+                <strong>
+                  Наушники JBL
+                </strong>
+              </a>
+              <span>
+                Электроника · хорошее
+              </span>
+              <small>
+                Продавец: Илья
+              </small>
+            </div>
+            <div class="cart-unit-price">
+              <small>
+                Цена
+              </small>
+              <strong>
+                1 500 ₽
+              </strong>
+            </div>
+            <div class="cart-quantity">
+              <small>
+                Количество
+              </small>
+              <strong>
+                1 шт.
+              </strong>
+            </div>
+            <div class="cart-shipping">
+              <small>
+                Передача
+              </small>
+              <strong>
+                Бесплатно*
+              </strong>
+            </div>
+            <div class="cart-subtotal">
+              <small>
+                Сумма
+              </small>
+              <strong>
+                1 500 ₽
+              </strong>
+            </div>
+          </article>
+          <article class="cart-row">
+            <a class="cart-product-image" href="item.html">
+              <img alt="Сумка через плечо с леопардовым принтом" class="img-fluid" src="img/leopard-bag.jpg"/>
+            </a>
+            <div class="cart-product-info">
+              <a href="item.html">
+                <strong>
+                  Сумка через плечо с леопардовым принтом
+                </strong>
+              </a>
+              <span>
+                Аксессуары · хорошее
+              </span>
+              <small>
+                Продавец: Мария
+              </small>
+            </div>
+            <div class="cart-unit-price">
+              <small>
+                Цена
+              </small>
+              <strong>
+                900 ₽
+              </strong>
+            </div>
+            <div class="cart-quantity">
+              <small>
+                Количество
+              </small>
+              <strong>
+                1 шт.
+              </strong>
+            </div>
+            <div class="cart-shipping">
+              <small>
+                Передача
+              </small>
+              <strong>
+                Бесплатно*
+              </strong>
+            </div>
+            <div class="cart-subtotal">
+              <small>
+                Сумма
+              </small>
+              <strong>
+                900 ₽
+              </strong>
+            </div>
+          </article>
+          <article class="cart-row">
+            <a class="cart-product-image" href="item.html">
+              <img alt="Телефон Samsung с кнопками" class="img-fluid" src="img/phone-samsung.jpg"/>
+            </a>
+            <div class="cart-product-info">
+              <a href="item.html">
+                <strong>
+                  Телефон Samsung с кнопками
+                </strong>
+              </a>
+              <span>
+                Электроника · хорошее
+              </span>
+              <small>
+                Продавец: Алексей
+              </small>
+            </div>
+            <div class="cart-unit-price">
+              <small>
+                Цена
+              </small>
+              <strong>
+                800 ₽
+              </strong>
+            </div>
+            <div class="cart-quantity">
+              <small>
+                Количество
+              </small>
+              <strong>
+                1 шт.
+              </strong>
+            </div>
+            <div class="cart-shipping">
+              <small>
+                Передача
+              </small>
+              <strong>
+                Бесплатно*
+              </strong>
+            </div>
+            <div class="cart-subtotal">
+              <small>
+                Сумма
+              </small>
+              <strong>
+                800 ₽
+              </strong>
+            </div>
+          </article>
+        </div>
+        <div class="cart-actions d-flex align-items-center justify-content-between">
+          <a class="text-link" href="catalog.html">
+            Продолжить покупки
+          </a>
+          <a class="btn button button-outline" href="catalog.html">
+            Вернуться в каталог
+          </a>
+        </div>
+        <div class="cart-checkout-grid">
+          <div class="cart-form-card">
+            <h3>
+              Адрес для встречи
+            </h3>
+            <p>
+              Укажи город и удобный ориентир, чтобы продавец мог предложить место встречи.
+            </p>
+            <form action="checkout.html" method="get">
+              <input name="city" placeholder="Город" required=""/>
+              <input name="place" placeholder="Район или ориентир" required=""/>
+              <button class="btn button button-outline" type="submit">
+                Продолжить
+              </button>
+            </form>
+          </div>
+          <div class="cart-form-card coupon-card">
+            <h3>
+              Скидочный код
+            </h3>
+            <p>
+              Некоторые продавцы предлагают скидки при личной договорённости.
+            </p>
+            <p>
+              <strong>
+                Спроси продавца о возможности скидки.
+              </strong>
+            </p>
+          </div>
+          <div class="cart-total-card">
+            <div class="summary-line d-flex align-items-center justify-content-between">
+              <span>
+                Товары (3)
+              </span>
+              <strong>
+                3 200 ₽
+              </strong>
+            </div>
+            <div class="summary-line d-flex align-items-center justify-content-between">
+              <span>
+                Передача
+              </span>
+              <strong>
+                0 ₽*
+              </strong>
+            </div>
+            <div class="summary-total d-flex align-items-center justify-content-between">
+              <span>
+                Итого
+              </span>
+              <strong>
+                3 200 ₽
+              </strong>
+            </div>
+            <a class="btn button button-primary button-wide" href="checkout.html">
+              Перейти к оформлению →
+            </a>
+            <small>
+              * Условия передачи согласуются с продавцом.
+            </small>
+          </div>
+        </div>
+      </section>
+    </main>
+    <section class="newsletter">
+      <div class="container newsletter-inner">
+        <div class="newsletter-quote">
+          <span class="quote-mark">
+            “
+          </span>
+          <div>
+            <p>
+              Хорошие вещи не должны заканчиваться на одном владельце.
+            </p>
+            <span>
+              Сообщество Барахолки
+            </span>
+          </div>
+        </div>
+        <form action="#" class="newsletter-form" method="get">
+          <label for="newsletter-email">
+            ОСТАВАЙСЯ НА СВЯЗИ
+          </label>
+          <p>
+            Новые находки и идеи для разумных покупок
+          </p>
+          <div>
+            <input class="form-control" id="newsletter-email" name="email" placeholder="Твой email" required="" type="email"/>
+            <button type="submit">
+              Подписаться
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <div class="footer-about">
+          <a class="brand" href="index.html">
+            <span class="brand-mark">
+              б
+            </span>
+            <span>
+              БАРАХОЛКА
+              <span class="brand-dot">
+                .
+              </span>
+              <small>
+                вещи находят хозяев
+              </small>
+            </span>
+          </a>
+          <p>
+            Место, где хорошие вещи получают второй шанс. Покупай, продавай и находи то, что давно искал.
+          </p>
+        </div>
+        <div class="footer-column">
+          <h3>
+            Сообщество
+          </h3>
+          <a href="index.html">
+            Главная
+          </a>
+          <a href="catalog.html">
+            Каталог
+          </a>
+          <a href="item.html">
+            Объявление
+          </a>
+          <a href="cart.html">
+            Корзина
+          </a>
+        </div>
+        <div class="footer-column">
+          <h3>
+            Покупателям
+          </h3>
+          <a href="checkout.html">
+            Как купить
+          </a>
+          <a href="checkout.html">
+            Оформление заказа
+          </a>
+          <a href="catalog.html">
+            Все объявления
+          </a>
+        </div>
+        <div class="footer-column">
+          <h3>
+            Категории
+          </h3>
+          <a href="catalog.html?section=electronics">
+            Электроника
+          </a>
+          <a href="catalog.html?section=clothes">
+            Одежда и обувь
+          </a>
+          <a href="catalog.html?section=music">
+            Музыка
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom d-flex align-items-center justify-content-between">
+        <div class="container">
+          <span>
+            © 2026 Барахолка. Учебный проект.
+          </span>
+          <div class="social-links">
+            <a aria-label="Электронная почта" href="mailto:hello@example.com">
+              ✉
+            </a>
+            <a aria-label="Каталог" href="catalog.html">
+              Б
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
